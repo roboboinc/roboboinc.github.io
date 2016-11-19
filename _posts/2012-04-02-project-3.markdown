@@ -1,0 +1,14 @@
+---
+title: Necto AnyRC
+layout: default
+modal-id: 3
+date: 2012-04-02
+img: anyrc/AnyRC_controllerUICAR.png
+alt: image-alt
+project-date: May 2012
+client: Undisclosed
+category: IoT (Internet of Things)
+link: www.youtube.com/watch?v=YPoZA2stVVU
+description: Introducing the Necto anyRC <p>This is an exciting new product from Robobo that enables any remote controlled toy car to be effortlessly modified and accept to be controlled by their Android Smartphone. There are 3 easy steps to enable a cheap radio controlled toy car to be turned into a smart and feature packed toy. Bring life to that boring controller.</p> <b>Hardware Features</b> <p>This device features an enclosure for the modified Radio Controlled toy car and is made to be compact. This version can be powered by removable battery (recommended) or via USB.</p> <b>Current Application Features</b> <p>The mobile application brings the once boring toy to life by providing the following</p> <p>Voice control enabling you to easily command the car to move at a certain direction. Touch control giving you the easy and fancy User Interface that just works! Accelerometer control allowing you to orient the phone in a respective direction and the remote controlled car responds accordingly. Above all, have we mentioned how much convenient and cooler it is to simply take your phone out and control a toy car?! Yes we know this will please many.</p> <p><img src="img/portfolio/anyrc/necto_anyRcdemo.png" border="0" alt="Necto Usense Prototype Images" width="557" height="241"> </p> <p> <b>Video Demo</b></p> <iframe width="100%" height="315" src="http://www.youtube.com/embed/YPoZA2stVVU?rel=0" frameborder="0" allowfullscreen=""></iframe>
+
+---

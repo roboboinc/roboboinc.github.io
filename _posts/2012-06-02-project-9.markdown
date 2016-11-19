@@ -1,0 +1,13 @@
+---
+title: 3D Printing Necto Hardware
+layout: default
+modal-id: 9
+date: 2012-04-02
+img: 3dprint/3dprint.png
+alt: image-alt
+project-date: April 2012
+client: Undisclosed
+category: 3D Printing
+link: www.youtube.com/watch?v=KwISKA9waEc
+description: <p> From development of CAD drawings, PCB architecture to preparation of the print work, we made the Necto product line come to life. We took advantage of an Open Source project, the RepRap and made our entire hardware prototype come to life. This feature is purely Robobo. </p><b>Video Demo</b></p> <iframe width="100%" height="315" src="http://www.youtube.com/embed/KwISKA9waEc?rel=0" frameborder="0" allowfullscreen=""></iframe>
+---

@@ -1,0 +1,14 @@
+---
+title: Necto Lamp
+layout: default
+modal-id: 2
+date: 2012-04-02
+img: ulamp/necto_lamp_small.png
+alt: image-alt
+project-date: May 2012
+client: Undisclosed
+category: IoT (Internet of Things)
+link: www.youtube.com/watch?v=18WBX1-ytj4
+description: <p> Introducing the Necto light, a different approach in light interfacing. A device that gives you many options and functions that you will actually forget that it is just a simple lamp. </p> <b>Hardware Features</b> <p> This device version works with Red, Green and Blue LEDs permitting for different colours to be chosen from within the mobile application. This version can be powered by removable battery or via USB.</p> <b>Current Application Features</b> <p> The lamp when controlled from the mobile provides great features such as:</p> <b>AMARINO'S MULTICOLOR LAMP </b> <p>This feature as the name suggests, is not our own. We use it here for one main reason which is to show developers how easy it is to make their existing project from Amarino into Necto. For the end user, well it provides the excellent ability to manually control the colour of light on the lamp and let you play around to find your favourite colour. Brighten up your room in a different way.</p> <b>THE VISUAL METRONOME </b> <p>This is an exciting feature that will keep musicians and dancers tune. This feature enables users to set the tempo from their mobile and have the results displayed to them. No more tic-tac sounds, unless you really want it and we can include the feature. No more excuses for being off beat. This feature is purely Robobo.</p> <p><img src="img/portfolio/ulamp/necto_lamps.png" border="0" alt="Necto Usense Prototype Images" width="557" height="241"> </p> <p> <b>Video Demo</b></p> <iframe width="100%" height="315" src="http://www.youtube.com/embed/18WBX1-ytj4?rel=0" frameborder="0" allowfullscreen=""></iframe>
+
+---
