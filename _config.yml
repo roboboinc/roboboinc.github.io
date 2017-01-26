@@ -1,5 +1,5 @@
 # Site settings
-title: Robobo
+title: Robobo - APAUMA Construcoes Soc. Unip. Lda
 email: team@robobo.org
 url: http://www.robobo.org
 baseurl: /
@@ -16,7 +16,7 @@ color:
 
 # Footer settings
 footer:
-  copyright: Robobo Inc
+  copyright: Robobo Inc (APAUMA ICT Division)
   location: Location
   social: Around the Web
   credits: Credits
@@ -57,5 +57,4 @@ analytics :
   provider : google
   google : 
       tracking_id : 'UA-31328187-1'
-  
   
