@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>how-to &#8211; Robobo Inc</title>
+	<atom:link href="/tag/how-to/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>An innovating solutions ICT4D Firm based in Mozambique</description>
+	<lastBuildDate>Tue, 03 Mar 2020 10:40:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://i0.wp.com/robobo.org/wp-content/uploads/2019/06/logo-e1586774220427.png?fit=32%2C32&#038;ssl=1</url>
+	<title>how-to &#8211; Robobo Inc</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">54218841</site>	<item>
+		<title>Cleaning up data for analysis with visualization software &#8211; Using MS Excel</title>
+		<link>/cleaning-up-data-for-analysis-with-data-analysis-packages-using-excel/</link>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 03 Mar 2020 10:30:56 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[How-To's]]></category>
+		<category><![CDATA[how-to]]></category>
+		<guid isPermaLink="false">/?p=1513</guid>
+
+					<description><![CDATA[This a is a quick tip and how-to, to help you cleanup data that contains special characters using Microsoft Excel a Macro with VBA ultimately helping you save time dealing with those files when wanting to use data visualization or related platforms. At Robobo we work and support our clients with managing their data, this&#8230;&#160;<a href="/cleaning-up-data-for-analysis-with-data-analysis-packages-using-excel/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Cleaning up data for analysis with visualization software &#8211; Using MS Excel</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>This a is a quick tip and how-to, to help you cleanup data that contains special characters using Microsoft Excel a Macro with VBA ultimately helping you save time dealing with those files when wanting to use data visualization or related platforms.</p>
+
+
+
+<p>At Robobo we work and support our clients with managing their data, this includes cleaning data and uploading to use with data visualization platforms such as Superset, STATA and others. Normally when working with data collection, especially dealing with languages with special characters (ã, ç, et. al.) that we have in the Portuguese language and others, we usually have a hard time pulling data with those characters as most packages will give you an error.</p>
+
+
+
+<p>The are many options to clean data of those special characters, including for instance in STATA you can specify that the information is cleaned, but for the sakes of superset and related platforms, we can use Microsoft Excel and some good old Macro rule. For simplicity, I will assume that the reader knows how to work with Macros, nevertheless, the basic steps to use or active it can be found on: <a href="https://support.office.com/en-us/article/run-a-macro-5e855fd2-02d1-45f5-90a3-50e645fe3155" target="_blank" rel="noopener">https://support.office.com/en-us/article/run-a-macro-5e855fd2-02d1-45f5-90a3-50e645fe3155</a> or <a href="https://www.datanumen.com/blogs/how-to-run-vba-code-in-your-excel/" target="_blank" rel="noopener">https://www.datanumen.com/blogs/how-to-run-vba-code-in-your-excel/</a> provide clear instructions on how.</p>
+
+
+
+<p><strong>Code to use:</strong></p>
+
+
+
+<pre class="wp-block-code"><code>Sub CleanDataFromSpecialChars()
+'
+' CleanDataFromSpecialChars Macro
+' Cleans or Strips all Special Characters from the worksheet
+'
+
+'
+    Cells.Select
+    Selection.Replace What:="Ç", Replacement:="C", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:= _
+        xlReplaceFormula2
+    Selection.Replace What:="ç", Replacement:="c", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:= _
+        xlReplaceFormula2
+    Selection.Replace What:="Â", Replacement:="A", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ã", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Á", Replacement:="A", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="À", Replacement:="A", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ä", Replacement:="A", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Å", Replacement:="A", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="É", Replacement:="E", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="È", Replacement:="E", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="È", Replacement:="E", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ê", Replacement:="E", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ë", Replacement:="E", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ì", Replacement:="I", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Í", Replacement:="I", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Î", Replacement:="I", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ï", Replacement:="I", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ñ", Replacement:="N", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ò", Replacement:="O", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ó", Replacement:="O", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ô", Replacement:="O", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Õ", Replacement:="O", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ö", Replacement:="O", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ù", Replacement:="U", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ú", Replacement:="U", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Û", Replacement:="U", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ü", Replacement:="U", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="â", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ã", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="á", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="à", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ä", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="å", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ª", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="é", Replacement:="e", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="è", Replacement:="e", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ê", Replacement:="e", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ë", Replacement:="e", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ì", Replacement:="i", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="í", Replacement:="i", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="î", Replacement:="i", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ï", Replacement:="i", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ñ", Replacement:="n", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ò", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ó", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ô", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="õ", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ö", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="º", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ù", Replacement:="u", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ú", Replacement:="u", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="û", Replacement:="u", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ü", Replacement:="u", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ÿ", Replacement:="y", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+        
+        
+    
+End Sub
+</code></pre>
+
+
+
+<p>Hope this helps you save time cleaning the entire csv or data file with special characters.</p>
+
+
+
+<p><strong>NOTE:</strong></p>
+
+
+
+<p>This approach does indeed have its drawbacks, for instance:</p>
+
+
+
+<ul><li>On large datasets, this can take a very long time to process and may render Excel irresponsive, but with patience it should process every line (we have dealt with a 26MB+ excel file) which ran for just under an hour to process</li><li>A second version of this script could focus on cleaning only select rows or columns, that way we can specify only columns we need.</li></ul>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1513</post-id>	</item>
+	</channel>
+</rss>

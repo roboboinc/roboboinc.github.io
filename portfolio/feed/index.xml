@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Portfolio &#8211; Robobo Inc</title>
+	<atom:link href="/portfolio/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>An innovating solutions ICT4D Firm based in Mozambique</description>
+	<lastBuildDate>Tue, 07 May 2019 14:23:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://i0.wp.com/robobo.org/wp-content/uploads/2019/06/logo-e1586774220427.png?fit=32%2C32&#038;ssl=1</url>
+	<title>Portfolio &#8211; Robobo Inc</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">54218841</site>	<item>
+		<title>NHS – NHS Waitless</title>
+		<link>/portfolio/nhs-nhs-waitless/</link>
+					<comments>/portfolio/nhs-nhs-waitless/#respond</comments>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 14:23:59 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=portfolio&#038;p=766</guid>
+
+					<description><![CDATA[Development of a prototype for the NHS waiting times, through the use of open data API’s to build an application for use by patients and the general public in finding out the hospitals or walk-in centre waiting times;]]></description>
+										<content:encoded><![CDATA[
+<p>
+
+Development of a prototype for the NHS waiting times, through the use of open data API’s to build an application for use by patients and the  general public in finding out the hospitals or walk-in centre waiting times;
+
+</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/portfolio/nhs-nhs-waitless/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">766</post-id>	</item>
+		<item>
+		<title>UK Parliament – Timeline</title>
+		<link>/portfolio/uk-parliament-timeline/</link>
+					<comments>/portfolio/uk-parliament-timeline/#respond</comments>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 14:22:02 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=portfolio&#038;p=764</guid>
+
+					<description><![CDATA[.. • Development of a prototype for the UK parliament where in coordination with parliament officials • Implemented a timeline to portray history of UK parliament and raise awareness of relevant events]]></description>
+										<content:encoded><![CDATA[
+<p>..</p>• Development of a prototype for the UK parliament where in coordination with parliament officials • Implemented a timeline to portray history of UK parliament and raise awareness of relevant events
+]]></content:encoded>
+					
+					<wfw:commentRss>/portfolio/uk-parliament-timeline/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">764</post-id>	</item>
+		<item>
+		<title>Linha Fala Crianca – Application and Support</title>
+		<link>/portfolio/linha-fala-crianca-application-and-support/</link>
+					<comments>/portfolio/linha-fala-crianca-application-and-support/#respond</comments>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 14:19:44 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=portfolio&#038;p=762</guid>
+
+					<description><![CDATA[.. Developed a web-based application that for a Child helpline call managements and registry • Managed software design process • Provided ongoing technical support during development process and capacity building • Redesigned organization website • Call centre support, Whatsapp integration and PBX line configuration]]></description>
+										<content:encoded><![CDATA[
+<p>..</p>Developed a web-based application that for a Child helpline call managements and registry • Managed software design process • Provided ongoing technical support during development process and capacity building • Redesigned organization website • Call centre support, Whatsapp integration and PBX line configuration
+]]></content:encoded>
+					
+					<wfw:commentRss>/portfolio/linha-fala-crianca-application-and-support/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">762</post-id>	</item>
+		<item>
+		<title>CLN Contract Management Application</title>
+		<link>/portfolio/cln-contract-management-application/</link>
+					<comments>/portfolio/cln-contract-management-application/#respond</comments>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 14:17:46 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=portfolio&#038;p=760</guid>
+
+					<description><![CDATA[&#8230; Developed a web-based application that for management of business contracts for Corredor Logistico de Nacala (CLN) • Managed software design process • Coordinated with Local IT staff on the setup of servers and software requirements to run the application • Java Based Web Application, using Spring Boot and other web technologies]]></description>
+										<content:encoded><![CDATA[
+<p>&#8230;</p>Developed a web-based application that for management of business contracts for Corredor Logistico de Nacala (CLN) • Managed software design process • Coordinated with Local IT staff on the setup of servers and software requirements to run the application • Java Based Web Application, using Spring Boot and other web technologies 
+]]></content:encoded>
+					
+					<wfw:commentRss>/portfolio/cln-contract-management-application/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">760</post-id>	</item>
+		<item>
+		<title>Magazine Independente: News agency</title>
+		<link>/portfolio/magazine-independente-news-agency/</link>
+					<comments>/portfolio/magazine-independente-news-agency/#respond</comments>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 14:15:16 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=portfolio&#038;p=758</guid>
+
+					<description><![CDATA[&#8230; • Developed a native Android Application to provide online and offline view of News from www.magazineindependente.com • Capacity building to News staff in data entry, content management and best practices • Management of advertising content presented on Website and mobile application. • Server uptime management • Technical support through SLA agreement • Management of&#8230;&#160;<a href="/portfolio/magazine-independente-news-agency/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Magazine Independente: News agency</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>&#8230;</p>• Developed a native Android Application to provide online and offline view of News from www.magazineindependente.com • Capacity building to News staff in data entry, content management and best practices • Management of advertising content presented on Website and mobile application. • Server uptime management • Technical support through SLA agreement • Management of publishing the app on 
+]]></content:encoded>
+					
+					<wfw:commentRss>/portfolio/magazine-independente-news-agency/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">758</post-id>	</item>
+		<item>
+		<title>Primeira Mão: Página Web</title>
+		<link>/portfolio/primeira-mao-pagina-web/</link>
+					<comments>/portfolio/primeira-mao-pagina-web/#respond</comments>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 14:12:31 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=portfolio&#038;p=755</guid>
+
+					<description><![CDATA[&#8230; Address: www.1maomz.com • A local news agency website, with social media presence and implementation of innovative communication strategies; • Managed Development, web server setup, whatsapp messaging integration, newsletters and SLA. • Proactive server management and protection against attacks • Domain management • Provision of technical support to editorial team]]></description>
+										<content:encoded><![CDATA[
+<p>&#8230;</p>Address: www.1maomz.com • A local news agency website, with social media presence and implementation of innovative communication strategies; • Managed Development, web server setup, whatsapp messaging integration, newsletters and SLA. • Proactive server management and protection against attacks • Domain management • Provision of technical support to editorial team
+]]></content:encoded>
+					
+					<wfw:commentRss>/portfolio/primeira-mao-pagina-web/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">755</post-id>	</item>
+		<item>
+		<title>CNCS – App iOS</title>
+		<link>/portfolio/cncs-app-ios/</link>
+					<comments>/portfolio/cncs-app-ios/#respond</comments>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 14:02:25 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=portfolio&#038;p=752</guid>
+
+					<description><![CDATA[&#8230;&#60;/p Clients: UNICEF, NWETI and CNCS (ONSPOT) • Interactive quiz application on the topic of HIV &#38; AIDS to youth • Development of a native iOS mobile application • Implemented online and offline features • Developed a “serverless” synchronization to Google Sheets &#62;]]></description>
+										<content:encoded><![CDATA[
+<p>&#8230;&lt;/p
+<p>Clients: UNICEF, NWETI and CNCS (ONSPOT) • Interactive quiz application on the topic of HIV &amp; AIDS to youth • Development of a native iOS mobile application • Implemented online and offline features • Developed a “serverless” synchronization to Google Sheets</p>
+&gt;
+]]></content:encoded>
+					
+					<wfw:commentRss>/portfolio/cncs-app-ios/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">752</post-id>	</item>
+		<item>
+		<title>Barclays (via Onspot) – App Android</title>
+		<link>/portfolio/barclays-via-onspot-app-android/</link>
+					<comments>/portfolio/barclays-via-onspot-app-android/#respond</comments>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 13:58:02 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=portfolio&#038;p=750</guid>
+
+					<description><![CDATA[&#8221;&#8221; • An interactive survey on the subject of insurance • Native Android Application • Synchronization with Google Sheets • Collected a large amount of data from participants that was collected throughout different branches in Maputo]]></description>
+										<content:encoded><![CDATA[
+<p>&#8221;&#8221;</p>• An interactive survey on the subject of insurance • Native Android Application • Synchronization with Google Sheets • Collected a large amount of data from participants that was collected throughout different branches in Maputo
+]]></content:encoded>
+					
+					<wfw:commentRss>/portfolio/barclays-via-onspot-app-android/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">750</post-id>	</item>
+		<item>
+		<title>3D Printing Necto Hardware</title>
+		<link>/portfolio/3d-printing-necto-hardware/</link>
+					<comments>/portfolio/3d-printing-necto-hardware/#respond</comments>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 13:48:28 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=portfolio&#038;p=747</guid>
+
+					<description><![CDATA[&#8230; From development of CAD drawings, PCB architecture to preparation of the print work, we made the Necto product line come to life. We took advantage of an Open Source project, the RepRap and made our entire hardware prototype come to life. This feature is purely Robobo. Video Demo project-date: April 2012 client: Undisclosed]]></description>
+										<content:encoded><![CDATA[
+<p> &#8230;</p><p> From development of CAD drawings, PCB architecture to preparation of the print work, we made the Necto product line come to life. We took advantage of an Open Source project, the RepRap and made our entire hardware prototype come to life. This feature is purely Robobo. </p><b>Video Demo</b></p>  
+
+
+
+<p>project-date: April 2012<br>
+client: Undisclosed<br>
+</p>
+
+
+
+<ul class="wp-block-gallery columns-0 is-cropped"></ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>/portfolio/3d-printing-necto-hardware/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">747</post-id>	</item>
+		<item>
+		<title>Website da Moz Devz</title>
+		<link>/portfolio/website-da-moz-devz/</link>
+					<comments>/portfolio/website-da-moz-devz/#respond</comments>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 07 May 2019 13:37:46 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=portfolio&#038;p=743</guid>
+
+					<description><![CDATA[&#8230; Desenvolvimento do novo website da comunidade MozDevz.org. O website implementa a melhor technologia responsiva, isto é, adapta-se ao ecrã em que está a ser visualizado (perfeito em smartphones assim como em browsers web no PC). Pode ser visitado em www.MozDevz.org project-date: May 2015 client: Moz Devz]]></description>
+										<content:encoded><![CDATA[
+<p>&#8230; <br><br></p>Desenvolvimento do novo website da comunidade <a href="http://mozdevz.org/" target="_blank" rel="noopener">MozDevz.org</a>. O website implementa a melhor technologia responsiva, isto é, adapta-se ao ecrã em que está a ser visualizado (perfeito em smartphones assim como em browsers web no PC). Pode ser visitado em <a href="http://mozdevz.org/" target="_blank" rel="noopener">www.MozDevz.org</a> 
+
+
+
+<ul class="wp-block-gallery columns-0 is-cropped"></ul>
+
+
+
+<p><br> </p>
+
+
+
+<p>project-date: May 2015<br>
+client: Moz Devz<br>
+</p>
+
+
+
+<p><br> </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/portfolio/website-da-moz-devz/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">743</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Emilaine Fortes &#8211; Robobo Inc</title>
+	<atom:link href="/author/emilaine/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>An innovating solutions ICT4D Firm based in Mozambique</description>
+	<lastBuildDate>Mon, 16 Sep 2019 14:59:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://i0.wp.com/robobo.org/wp-content/uploads/2019/06/logo-e1586774220427.png?fit=32%2C32&#038;ssl=1</url>
+	<title>Emilaine Fortes &#8211; Robobo Inc</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">54218841</site>	<item>
+		<title>Joseph Mboane – Experiência do estágio na Robobo</title>
+		<link>/joseph-mboane-experiencia-do-estagio-na-robobo/</link>
+		
+		<dc:creator><![CDATA[Emilaine Fortes]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2019 14:59:41 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=1308</guid>
+
+					<description><![CDATA[No primeiro dia de estágio, nos foi apresentado os projectos já feitos pela empresa e os trabalhos que estão a ser feitos, fora esse também falou se de algumas possibilidades de alguns projectos futuros. O projecto a mim destinado, foi a configuração de um captive portal usando um minicomputador Raspberry pi, projecto esse que levou&#8230;&#160;<a href="/joseph-mboane-experiencia-do-estagio-na-robobo/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Joseph Mboane – Experiência do estágio na Robobo</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>
+No
+primeiro dia de estágio, nos foi apresentado os projectos já feitos
+pela empresa e os trabalhos que estão a ser feitos, fora esse também
+falou se de algumas possibilidades de alguns projectos futuros.</p>
+
+
+
+<p>
+ O
+projecto a mim destinado, foi a configuração de um captive portal
+usando um minicomputador Raspberry pi, projecto esse que levou quase
+todo tempo do meu estágio, salientar que tinha sido a segunda vez a
+ver um raspberry pi em físico, nunca havia configurado e nem sabia o
+que era um portal cativo. Levei muito tempo para saber o porque que
+precisávamos de fazer um portal cativo usando o raspberry pi, como
+diz o ditado o tempo dita a história e foi assim, com o tempo
+percebi qual era necessário e o porquê de ter sido escolhido o
+raspberry pi.</p>
+
+
+
+<p>
+O
+apoio dos colegas ajudou me bastante.</p>
+
+
+
+<p>
+Fiz
+a minha primeira conexão ssh ao raspberry analisando o ambiente. Na
+descrição da tarefa, tinha um exemplo de como fazer um portal
+cativo, tentei várias vezes configurar o captive portal seguindo o
+tutorial da descrição e não obtia o resultado desejado, sempre que
+o resultado não era o desejado, a única opção que eu tinha sendo
+um iniciante na matéria de configuração do Pi era formatar.
+Formatei mais de 5 vezes o cartão que contém o sistema operativo do
+Raspberry PI enfim usando um outro link que me explicava de forma
+clara o que é um captive portal e como configurar. Acabei
+configurando, mas nem tudo estava bom, o que obrigou me na segunda
+semana de Agosto instalar o sistema operativo open wrt isso na
+tentativa de encontrar a melhor forma de fazer o captive portal.</p>
+
+
+
+<p>
+Com
+tudo já fazia o captive portal no sistema operativo raspbian-strech
+mas não conseguia fazer redirect das requisições https, o redirect
+só funcionava para páginas http, esse foi o motivo principal que me
+fez migrar para o sistema operativo open wrt, mas no sistema
+operativo open wrt não tive muito sucesso porque apresentava pouco
+espaço para instalação de outros programas, o que fez me voltar ao
+primeiro e desta forma até então usamos o raspbian-strech e foi
+neste sistema operativo em que fizemos a nossa primeira página, que
+substituía a página do bem vindo ao Nginx, e chamamos essa versão
+de versão1.0, página essa que foi escrita em HTML5, CSS e pouco
+Javascript. 
+</p>
+
+
+
+<p>
+O
+desenho da página e a implementação já estava pronta para os dias
+20,21,22 e 27 de agosto de 2019 fizermos a montagem dos equipamentos
+e fazer os últimos ajustes no próprio terrenos na montagem do
+equipamento.</p>
+
+
+
+<p>
+Tivemos
+como constrangimento a falta de confiança por parte dos vendedores,
+uma das lojas, não colaborava com a nossa equipe, o que acabava por
+dificultar o nosso trabalho. Tirando esse pequeno obstáculo, tudo
+foi muito bom tanto que quando apresentamos os resultados da nossa
+rede montada para alguns vendedores, louvaram a iniciativa e todos
+diziam que esse ano tudo estava diferente e que estão melhores que
+do ano passado, sendo esse um trabalho a ser continuado.</p>
+
+
+
+<p>
+De
+uma forma resumida o trabalho foi bem feito, segundo os vendedores e
+também na nossa análise como técnicos. Contudo mediante a
+experiência dos utilizadores fomos forçados a migrar logo para
+versão 1.1 que desenhada em WordPress isso no ambiente de produção
+que é o mercado do zimpeto.</p>
+
+
+
+<p>
+A
+experiência na Robobo Inc foi muito boa, aprendi muita coisa nova,
+como a configuração do raspberry pi, o uso de ferramenta de
+controle de actividades (redmine), nova linguagem de programação
+(python django), novo framework front-end (angular), trabalhar com em
+heroku assim como fazer deploy de aplicações no heroku, trabalhar
+de uma forma seria com o cms wordpress.  
+</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1308</post-id>	</item>
+		<item>
+		<title>Ussene Mussá &#8211; Experiência do estágio na Robobo</title>
+		<link>/ussene-mussa-experiencia-do-estagio-na-robobo/</link>
+		
+		<dc:creator><![CDATA[Emilaine Fortes]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2019 13:58:39 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=1306</guid>
+
+					<description><![CDATA[Introdução Em primeiro lugar dizer que o meu nome é Ussene Mussá, sou desenvolvedor Web. Esse texto tem como objectivo descrever a minha jornada e a experiência adquirida como estagiário da Robobo. Quando entrei na Robobo tinha a experiência de estágios anteriores e um trabalho, tinha participado em alguns projectos de desenvolvimento de sistemas e&#8230;&#160;<a href="/ussene-mussa-experiencia-do-estagio-na-robobo/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Ussene Mussá &#8211; Experiência do estágio na Robobo</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>
+<strong>Introdução
+</strong>
+</p>
+
+
+
+<p>
+Em
+primeiro lugar dizer que o meu nome é Ussene Mussá, sou
+desenvolvedor Web. Esse texto tem como objectivo descrever a minha
+jornada e a experiência adquirida como estagiário da Robobo.</p>
+
+
+
+<p>
+Quando
+entrei na Robobo tinha a experiência de estágios anteriores e um
+trabalho, tinha participado em alguns projectos de desenvolvimento de
+sistemas e trazia comigo os seguintes conhecimentos e capacidades:
+base de dados, redes de computadores, administração de sistemas
+Linux, desenvolvimento web frontend (HTML5, CSS3, Javascript) e
+backend (PHP, JavaEE, C#, Node.Js etc..), e frameworks (JQuery,
+Laravel, Bootstrp, Angular etc.)</p>
+
+
+
+<p>
+O
+início de uma jornada é sempre cheio de incertezas, bom, foi assim
+que comecei a minha, com diversas incertezas e com sede de abraçar
+novos desafios que estavam por vir, uma vez que algumas tecnologias
+com as quais a empresa trabalha eram novidades para mim, em termos de
+trabalhar com as mesmas.</p>
+
+
+
+<p>
+<strong>Primeira
+etapa</strong></p>
+
+
+
+<p>
+Na
+primeira etapa da jornada tive a oportunidade de trabalhar com a
+tecnologia que gosto (PHP), mas não do jeito que gosto, isto, porque
+tive que trabalhar com o CMS (Sistema de Gestão de Conteúdo)
+Wordpress na prespectiva do utilizador e do programador. Foi na
+prespectiva de programador que enfrentei o maior desafio, já que,
+passava noites revirando o código fonte dos templates das
+plataformas que estava a trabalhar, com o objectivo de fazer
+alterações que não tinha a possibilidade de fazer através do CMS.</p>
+
+
+
+<p>
+No
+final das contas tive êxito em todas as plataformas que precisei
+revirar o código e com as que não precisei. Foi uma experiência
+interessante que ampliou os meus conhecimentos sobre PHP e WordPress,
+que culminou com a elaboração de portais como PagaLu,  Robobo e
+participei do desenvolvimento da plataforma Welela entre outras.</p>
+
+
+
+<p>
+<strong>Segunda
+etapa</strong></p>
+
+
+
+<p>
+Na
+segunda etapa tive um desafio muito grande, fui solicitado para
+trabalhar/participar no desenvolvimento da aplicação PagaLu. Foi o
+meu primeiro contacto com a tecnologia Python e Django, enfrentei
+algumas dificuldades sendo um principiante numa nova tecnologia.
+Felizmente pude satisfazer as necessidades pelas quais fui
+solicitado, que compreendia adicionar algumas funcionalidades ao
+fluxo da aplicação PagaLu.</p>
+
+
+
+<p>
+<strong>Terceira
+etapa</strong></p>
+
+
+
+<p>
+Ao
+longo das etapas que surgiam, houve aquela que foi a mais
+desafiadora. A etapa em que fui atribuído um projecto para trabalhar
+de forma independente por um período. Aceitei o desafio, o objectivo
+era desenvolver um sistema de gestão financeira, tendo como base a
+aplicação que já estava a funcionar e que foi desenvolvida com
+Python e Django. Tive que perceber a aplicação, entender o seu
+fluxo de funcionamento, identificar os pontos que poderiam ser
+melhorados, acrescentados ou alterados e integrar a aplicação com
+Angular.</p>
+
+
+
+<p>
+Esse
+foi o meu maior desafio, por ser a primeira vez a trabalhar com
+Python, Django, Django Rest Framework (para desenvolver as APIs no
+backend) e Angular (no frontend para consumir as APIs). Não foi
+tarefa fácil trabalhar com todas estas tecnologias juntas pela
+primeira vez num projecto grande sem contar que houve a necessidade
+de utilizar outras tecnologias juntamente com as citadas acima, como
+Bootstrap, NgxBootstrap etc. Fazer com que a aplicação Python e
+Angular funcionassem como uma única aplicação foi a cereja no topo
+do bolo.</p>
+
+
+
+<p>
+Este
+foi um período interessante do estágio, levou 1 mês e algumas
+semanas, onde consegui implementar algumas funcionalidades ao sistema
+de gestão financeira e posteriormente tive a oportunidade de ter a
+experiência de fazer o deploy da aplicação no Heroku que foi como
+escalar o monte Everest de tantos constrangimentos que enfrentei no
+processo. Em suma passei noites sem dormir pela satisfação de ter
+uma aplicação que faz alguma coisa e pode ser acedida por todos.</p>
+
+
+
+<p>
+<strong>Últimas
+considerações</strong></p>
+
+
+
+<p>
+No
+meio de todas estas etapas, houve sessões de apresentação do
+progresso do desenvolvimento do sistema de gestão financeira, no
+total tivemos três sessões com a equipa toda da Robobo. Foi uma
+experiência interessante que vai contribuir bastante no futuro na
+hora de apresentar projectos para potenciais clientes.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1306</post-id>	</item>
+	</channel>
+</rss>

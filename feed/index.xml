@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Robobo Inc</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>An innovating solutions ICT4D Firm based in Mozambique</description>
+	<lastBuildDate>Tue, 03 Mar 2020 10:40:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://i0.wp.com/robobo.org/wp-content/uploads/2019/06/logo-e1586774220427.png?fit=32%2C32&#038;ssl=1</url>
+	<title>Robobo Inc</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">54218841</site>	<item>
+		<title>Cleaning up data for analysis with visualization software &#8211; Using MS Excel</title>
+		<link>/cleaning-up-data-for-analysis-with-data-analysis-packages-using-excel/</link>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Tue, 03 Mar 2020 10:30:56 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[How-To's]]></category>
+		<category><![CDATA[how-to]]></category>
+		<guid isPermaLink="false">/?p=1513</guid>
+
+					<description><![CDATA[This a is a quick tip and how-to, to help you cleanup data that contains special characters using Microsoft Excel a Macro with VBA ultimately helping you save time dealing with those files when wanting to use data visualization or related platforms. At Robobo we work and support our clients with managing their data, this&#8230;&#160;<a href="/cleaning-up-data-for-analysis-with-data-analysis-packages-using-excel/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Cleaning up data for analysis with visualization software &#8211; Using MS Excel</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>This a is a quick tip and how-to, to help you cleanup data that contains special characters using Microsoft Excel a Macro with VBA ultimately helping you save time dealing with those files when wanting to use data visualization or related platforms.</p>
+
+
+
+<p>At Robobo we work and support our clients with managing their data, this includes cleaning data and uploading to use with data visualization platforms such as Superset, STATA and others. Normally when working with data collection, especially dealing with languages with special characters (ã, ç, et. al.) that we have in the Portuguese language and others, we usually have a hard time pulling data with those characters as most packages will give you an error.</p>
+
+
+
+<p>The are many options to clean data of those special characters, including for instance in STATA you can specify that the information is cleaned, but for the sakes of superset and related platforms, we can use Microsoft Excel and some good old Macro rule. For simplicity, I will assume that the reader knows how to work with Macros, nevertheless, the basic steps to use or active it can be found on: <a href="https://support.office.com/en-us/article/run-a-macro-5e855fd2-02d1-45f5-90a3-50e645fe3155" target="_blank" rel="noopener">https://support.office.com/en-us/article/run-a-macro-5e855fd2-02d1-45f5-90a3-50e645fe3155</a> or <a href="https://www.datanumen.com/blogs/how-to-run-vba-code-in-your-excel/" target="_blank" rel="noopener">https://www.datanumen.com/blogs/how-to-run-vba-code-in-your-excel/</a> provide clear instructions on how.</p>
+
+
+
+<p><strong>Code to use:</strong></p>
+
+
+
+<pre class="wp-block-code"><code>Sub CleanDataFromSpecialChars()
+'
+' CleanDataFromSpecialChars Macro
+' Cleans or Strips all Special Characters from the worksheet
+'
+
+'
+    Cells.Select
+    Selection.Replace What:="Ç", Replacement:="C", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:= _
+        xlReplaceFormula2
+    Selection.Replace What:="ç", Replacement:="c", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:= _
+        xlReplaceFormula2
+    Selection.Replace What:="Â", Replacement:="A", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ã", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Á", Replacement:="A", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="À", Replacement:="A", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ä", Replacement:="A", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Å", Replacement:="A", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="É", Replacement:="E", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="È", Replacement:="E", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="È", Replacement:="E", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ê", Replacement:="E", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ë", Replacement:="E", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ì", Replacement:="I", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Í", Replacement:="I", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Î", Replacement:="I", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ï", Replacement:="I", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ñ", Replacement:="N", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ò", Replacement:="O", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ó", Replacement:="O", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ô", Replacement:="O", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Õ", Replacement:="O", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ö", Replacement:="O", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ù", Replacement:="U", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ú", Replacement:="U", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Û", Replacement:="U", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Ü", Replacement:="U", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="â", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ã", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="á", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="à", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ä", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="å", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ª", Replacement:="a", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="é", Replacement:="e", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="è", Replacement:="e", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ê", Replacement:="e", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ë", Replacement:="e", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ì", Replacement:="i", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="í", Replacement:="i", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="î", Replacement:="i", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ï", Replacement:="i", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ñ", Replacement:="n", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ò", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ó", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ô", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="õ", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ö", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="º", Replacement:="o", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ù", Replacement:="u", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ú", Replacement:="u", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="û", Replacement:="u", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ü", Replacement:="u", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="ÿ", Replacement:="y", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=True, FormulaVersion:=xlReplaceFormula2
+        
+        
+    
+End Sub
+</code></pre>
+
+
+
+<p>Hope this helps you save time cleaning the entire csv or data file with special characters.</p>
+
+
+
+<p><strong>NOTE:</strong></p>
+
+
+
+<p>This approach does indeed have its drawbacks, for instance:</p>
+
+
+
+<ul><li>On large datasets, this can take a very long time to process and may render Excel irresponsive, but with patience it should process every line (we have dealt with a 26MB+ excel file) which ran for just under an hour to process</li><li>A second version of this script could focus on cleaning only select rows or columns, that way we can specify only columns we need.</li></ul>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1513</post-id>	</item>
+		<item>
+		<title>Joseph Mboane – Experiência do estágio na Robobo</title>
+		<link>/joseph-mboane-experiencia-do-estagio-na-robobo/</link>
+		
+		<dc:creator><![CDATA[Emilaine Fortes]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2019 14:59:41 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=1308</guid>
+
+					<description><![CDATA[No primeiro dia de estágio, nos foi apresentado os projectos já feitos pela empresa e os trabalhos que estão a ser feitos, fora esse também falou se de algumas possibilidades de alguns projectos futuros. O projecto a mim destinado, foi a configuração de um captive portal usando um minicomputador Raspberry pi, projecto esse que levou&#8230;&#160;<a href="/joseph-mboane-experiencia-do-estagio-na-robobo/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Joseph Mboane – Experiência do estágio na Robobo</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>
+No
+primeiro dia de estágio, nos foi apresentado os projectos já feitos
+pela empresa e os trabalhos que estão a ser feitos, fora esse também
+falou se de algumas possibilidades de alguns projectos futuros.</p>
+
+
+
+<p>
+ O
+projecto a mim destinado, foi a configuração de um captive portal
+usando um minicomputador Raspberry pi, projecto esse que levou quase
+todo tempo do meu estágio, salientar que tinha sido a segunda vez a
+ver um raspberry pi em físico, nunca havia configurado e nem sabia o
+que era um portal cativo. Levei muito tempo para saber o porque que
+precisávamos de fazer um portal cativo usando o raspberry pi, como
+diz o ditado o tempo dita a história e foi assim, com o tempo
+percebi qual era necessário e o porquê de ter sido escolhido o
+raspberry pi.</p>
+
+
+
+<p>
+O
+apoio dos colegas ajudou me bastante.</p>
+
+
+
+<p>
+Fiz
+a minha primeira conexão ssh ao raspberry analisando o ambiente. Na
+descrição da tarefa, tinha um exemplo de como fazer um portal
+cativo, tentei várias vezes configurar o captive portal seguindo o
+tutorial da descrição e não obtia o resultado desejado, sempre que
+o resultado não era o desejado, a única opção que eu tinha sendo
+um iniciante na matéria de configuração do Pi era formatar.
+Formatei mais de 5 vezes o cartão que contém o sistema operativo do
+Raspberry PI enfim usando um outro link que me explicava de forma
+clara o que é um captive portal e como configurar. Acabei
+configurando, mas nem tudo estava bom, o que obrigou me na segunda
+semana de Agosto instalar o sistema operativo open wrt isso na
+tentativa de encontrar a melhor forma de fazer o captive portal.</p>
+
+
+
+<p>
+Com
+tudo já fazia o captive portal no sistema operativo raspbian-strech
+mas não conseguia fazer redirect das requisições https, o redirect
+só funcionava para páginas http, esse foi o motivo principal que me
+fez migrar para o sistema operativo open wrt, mas no sistema
+operativo open wrt não tive muito sucesso porque apresentava pouco
+espaço para instalação de outros programas, o que fez me voltar ao
+primeiro e desta forma até então usamos o raspbian-strech e foi
+neste sistema operativo em que fizemos a nossa primeira página, que
+substituía a página do bem vindo ao Nginx, e chamamos essa versão
+de versão1.0, página essa que foi escrita em HTML5, CSS e pouco
+Javascript. 
+</p>
+
+
+
+<p>
+O
+desenho da página e a implementação já estava pronta para os dias
+20,21,22 e 27 de agosto de 2019 fizermos a montagem dos equipamentos
+e fazer os últimos ajustes no próprio terrenos na montagem do
+equipamento.</p>
+
+
+
+<p>
+Tivemos
+como constrangimento a falta de confiança por parte dos vendedores,
+uma das lojas, não colaborava com a nossa equipe, o que acabava por
+dificultar o nosso trabalho. Tirando esse pequeno obstáculo, tudo
+foi muito bom tanto que quando apresentamos os resultados da nossa
+rede montada para alguns vendedores, louvaram a iniciativa e todos
+diziam que esse ano tudo estava diferente e que estão melhores que
+do ano passado, sendo esse um trabalho a ser continuado.</p>
+
+
+
+<p>
+De
+uma forma resumida o trabalho foi bem feito, segundo os vendedores e
+também na nossa análise como técnicos. Contudo mediante a
+experiência dos utilizadores fomos forçados a migrar logo para
+versão 1.1 que desenhada em WordPress isso no ambiente de produção
+que é o mercado do zimpeto.</p>
+
+
+
+<p>
+A
+experiência na Robobo Inc foi muito boa, aprendi muita coisa nova,
+como a configuração do raspberry pi, o uso de ferramenta de
+controle de actividades (redmine), nova linguagem de programação
+(python django), novo framework front-end (angular), trabalhar com em
+heroku assim como fazer deploy de aplicações no heroku, trabalhar
+de uma forma seria com o cms wordpress.  
+</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1308</post-id>	</item>
+		<item>
+		<title>Ussene Mussá &#8211; Experiência do estágio na Robobo</title>
+		<link>/ussene-mussa-experiencia-do-estagio-na-robobo/</link>
+		
+		<dc:creator><![CDATA[Emilaine Fortes]]></dc:creator>
+		<pubDate>Mon, 16 Sep 2019 13:58:39 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=1306</guid>
+
+					<description><![CDATA[Introdução Em primeiro lugar dizer que o meu nome é Ussene Mussá, sou desenvolvedor Web. Esse texto tem como objectivo descrever a minha jornada e a experiência adquirida como estagiário da Robobo. Quando entrei na Robobo tinha a experiência de estágios anteriores e um trabalho, tinha participado em alguns projectos de desenvolvimento de sistemas e&#8230;&#160;<a href="/ussene-mussa-experiencia-do-estagio-na-robobo/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Ussene Mussá &#8211; Experiência do estágio na Robobo</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>
+<strong>Introdução
+</strong>
+</p>
+
+
+
+<p>
+Em
+primeiro lugar dizer que o meu nome é Ussene Mussá, sou
+desenvolvedor Web. Esse texto tem como objectivo descrever a minha
+jornada e a experiência adquirida como estagiário da Robobo.</p>
+
+
+
+<p>
+Quando
+entrei na Robobo tinha a experiência de estágios anteriores e um
+trabalho, tinha participado em alguns projectos de desenvolvimento de
+sistemas e trazia comigo os seguintes conhecimentos e capacidades:
+base de dados, redes de computadores, administração de sistemas
+Linux, desenvolvimento web frontend (HTML5, CSS3, Javascript) e
+backend (PHP, JavaEE, C#, Node.Js etc..), e frameworks (JQuery,
+Laravel, Bootstrp, Angular etc.)</p>
+
+
+
+<p>
+O
+início de uma jornada é sempre cheio de incertezas, bom, foi assim
+que comecei a minha, com diversas incertezas e com sede de abraçar
+novos desafios que estavam por vir, uma vez que algumas tecnologias
+com as quais a empresa trabalha eram novidades para mim, em termos de
+trabalhar com as mesmas.</p>
+
+
+
+<p>
+<strong>Primeira
+etapa</strong></p>
+
+
+
+<p>
+Na
+primeira etapa da jornada tive a oportunidade de trabalhar com a
+tecnologia que gosto (PHP), mas não do jeito que gosto, isto, porque
+tive que trabalhar com o CMS (Sistema de Gestão de Conteúdo)
+Wordpress na prespectiva do utilizador e do programador. Foi na
+prespectiva de programador que enfrentei o maior desafio, já que,
+passava noites revirando o código fonte dos templates das
+plataformas que estava a trabalhar, com o objectivo de fazer
+alterações que não tinha a possibilidade de fazer através do CMS.</p>
+
+
+
+<p>
+No
+final das contas tive êxito em todas as plataformas que precisei
+revirar o código e com as que não precisei. Foi uma experiência
+interessante que ampliou os meus conhecimentos sobre PHP e WordPress,
+que culminou com a elaboração de portais como PagaLu,  Robobo e
+participei do desenvolvimento da plataforma Welela entre outras.</p>
+
+
+
+<p>
+<strong>Segunda
+etapa</strong></p>
+
+
+
+<p>
+Na
+segunda etapa tive um desafio muito grande, fui solicitado para
+trabalhar/participar no desenvolvimento da aplicação PagaLu. Foi o
+meu primeiro contacto com a tecnologia Python e Django, enfrentei
+algumas dificuldades sendo um principiante numa nova tecnologia.
+Felizmente pude satisfazer as necessidades pelas quais fui
+solicitado, que compreendia adicionar algumas funcionalidades ao
+fluxo da aplicação PagaLu.</p>
+
+
+
+<p>
+<strong>Terceira
+etapa</strong></p>
+
+
+
+<p>
+Ao
+longo das etapas que surgiam, houve aquela que foi a mais
+desafiadora. A etapa em que fui atribuído um projecto para trabalhar
+de forma independente por um período. Aceitei o desafio, o objectivo
+era desenvolver um sistema de gestão financeira, tendo como base a
+aplicação que já estava a funcionar e que foi desenvolvida com
+Python e Django. Tive que perceber a aplicação, entender o seu
+fluxo de funcionamento, identificar os pontos que poderiam ser
+melhorados, acrescentados ou alterados e integrar a aplicação com
+Angular.</p>
+
+
+
+<p>
+Esse
+foi o meu maior desafio, por ser a primeira vez a trabalhar com
+Python, Django, Django Rest Framework (para desenvolver as APIs no
+backend) e Angular (no frontend para consumir as APIs). Não foi
+tarefa fácil trabalhar com todas estas tecnologias juntas pela
+primeira vez num projecto grande sem contar que houve a necessidade
+de utilizar outras tecnologias juntamente com as citadas acima, como
+Bootstrap, NgxBootstrap etc. Fazer com que a aplicação Python e
+Angular funcionassem como uma única aplicação foi a cereja no topo
+do bolo.</p>
+
+
+
+<p>
+Este
+foi um período interessante do estágio, levou 1 mês e algumas
+semanas, onde consegui implementar algumas funcionalidades ao sistema
+de gestão financeira e posteriormente tive a oportunidade de ter a
+experiência de fazer o deploy da aplicação no Heroku que foi como
+escalar o monte Everest de tantos constrangimentos que enfrentei no
+processo. Em suma passei noites sem dormir pela satisfação de ter
+uma aplicação que faz alguma coisa e pode ser acedida por todos.</p>
+
+
+
+<p>
+<strong>Últimas
+considerações</strong></p>
+
+
+
+<p>
+No
+meio de todas estas etapas, houve sessões de apresentação do
+progresso do desenvolvimento do sistema de gestão financeira, no
+total tivemos três sessões com a equipa toda da Robobo. Foi uma
+experiência interessante que vai contribuir bastante no futuro na
+hora de apresentar projectos para potenciais clientes.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">1306</post-id>	</item>
+		<item>
+		<title>Conteúdo fornecido na capacitação em Zambézia</title>
+		<link>/resultados-de-aprendizagem-na-capacitacao-de-zambezia/</link>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Wed, 03 Jul 2019 11:03:31 +0000</pubDate>
+				<category><![CDATA[Actividades]]></category>
+		<category><![CDATA[Serviços]]></category>
+		<guid isPermaLink="false">/?p=871</guid>
+
+					<description><![CDATA[O Treinamento foi fornecido em um formato de apresentação com o uso de um computador, projector e uma combinação de apresentação do PowerPoint e projecção de um telemóvel para que todos os participantes pudessem acompanhar. Visão geral do fluxo de trabalho para a coleta de dados e processos relacionados Visão geral dos instrumentos de trabalho&#8230;&#160;<a href="/resultados-de-aprendizagem-na-capacitacao-de-zambezia/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Conteúdo fornecido na capacitação em Zambézia</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p> O Treinamento foi fornecido em um formato de apresentação com o uso de um computador, projector e uma combinação de apresentação do PowerPoint e projecção de um telemóvel para que todos os participantes pudessem acompanhar. </p>
+
+
+
+<figure class="wp-block-image"><img src="https://i0.wp.com/robobo.org/wp-content/uploads/2019/07/IMG-20190626-WA0014.jpg?resize=1024%2C768&#038;ssl=1" alt="This image has an empty alt attribute; its file name is IMG-20190626-WA0014-1024x768.jpg" data-recalc-dims="1"/></figure>
+
+
+
+<ul><li>Visão geral do fluxo de trabalho para a coleta de dados e processos relacionados</li><li>Visão geral dos instrumentos de trabalho</li><li>Conhecimento básico sobre como operar e acessar os principais recursos do dispositivo móvel (aplicativos e configurações), incluindo hardware (ou seja, ligar e desligar os dispositivos e os botões de teclas)</li><li>Conhecimento do aplicativo e recursos do Open Data Kit Collect (ODK)</li><li>Instalação do ODK</li><li>Visão geral da interface do usuário do ODK</li><li>Como configurar o ODK com uma conta ONA.io</li><li>Como fazer o download, preencher, editar, excluir e enviar formulários</li><li>Protocolos e directivas para uso do smartphone</li><li>Resolver problemas comuns e resolução de problemas</li><li>Regras-chave de colecta de dados</li><li>Uso de GPS para capturar geocoordenadas</li><li>Resolver problemas comuns</li><li>Sessão prática e uso do ODK</li><li>Conhecimento prático dos formulários PEC:</li><li>&nbsp;Linha de base</li><li>Despertar</li><li>Monitoramento</li></ul>
+
+
+
+<p><strong>Coordenadores
+e Supervisores</strong>:</p>
+
+
+
+<ul><li>Uma visão geral dos instrumentos de colecta de dados e fluxos de trabalho</li><li>Acesso à plataforma ONA.io usando um nome de usuário e senha</li><li>Conhecimento de aprovação, rejeição e status pendente de submissões no ONA.io</li><li>Visão geral do painel do dossel</li><li>Acesso ao Dashboard</li><li>Compreender tabelas e gráficos exibidos</li><li>Uso de filtros e como eles refletem nos dados apresentados</li><li>Visão geral do mapa:</li><li>Acesso aos mapas</li><li>Uso ou aplicação de diferentes sobreposições</li><li>Navegação pelos mapas</li></ul>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">871</post-id>	</item>
+		<item>
+		<title>Estrutura e Entrega da Capacitação em Zambézia</title>
+		<link>/estrutura-e-entrega-da-capacitacao-de-zambezia/</link>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Wed, 03 Jul 2019 10:46:32 +0000</pubDate>
+				<category><![CDATA[Actividades]]></category>
+		<category><![CDATA[Produtos]]></category>
+		<category><![CDATA[Serviços]]></category>
+		<guid isPermaLink="false">/?p=865</guid>
+
+					<description><![CDATA[Um treinamento de alta qualidade foi realizado na língua portuguesa, seguindo as directrizes e recursos de treinamento da ONA, que incluíram a apresentação de conteúdo em uma tela grande e cópias electrónicas de materiais de treinamento, que foram disponibilizados pela UNICEF antes do treinamento, que foram impressos e distribuídos durante as sessões. O treinamento tinha&#8230;&#160;<a href="/estrutura-e-entrega-da-capacitacao-de-zambezia/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Estrutura e Entrega da Capacitação em Zambézia</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>Um treinamento de alta qualidade foi realizado na língua portuguesa, seguindo as directrizes e recursos de treinamento da ONA, que incluíram a apresentação de conteúdo em uma tela grande e cópias electrónicas de materiais de treinamento, que foram disponibilizados pela UNICEF antes do treinamento, que foram impressos e distribuídos durante as sessões. </p>
+
+
+
+<p>O treinamento tinha uma abordagem prática orientada, em que os participantes eram encorajados a fazer tentativas e experimentar o que estava a ser leccionado. A maioria dos participantes foi convidada a contribuir e demonstrar sua compreensão do conteúdo fornecido.</p>
+
+
+
+<p>Dois facilitadores da Robobo estiveram presentes durante o treinamento, onde um ministrou treinamento e o segundo forneceu apoio aos participantes e fez observações sobre o nível de entendimento. </p>
+
+
+
+<p>No final das sessões de treinamento com cada grupo, coordenadores e inquiridores, um questionário foi fornecido para que os participantes preenchessem e enviassem. A partir dos resultados da pesquisa, o feedback geral foi Bom.  </p>
+
+
+
+<figure class="wp-block-image"><img width="1024" height="768" src="https://i0.wp.com/robobo.org/wp-content/uploads/2019/07/IMG-20190626-WA0017-1.jpg?resize=1024%2C768&#038;ssl=1" alt="" class="wp-image-876" srcset="https://i0.wp.com/robobo.org/wp-content/uploads/2019/07/IMG-20190626-WA0017-1.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/robobo.org/wp-content/uploads/2019/07/IMG-20190626-WA0017-1.jpg?resize=600%2C450&amp;ssl=1 600w, https://i0.wp.com/robobo.org/wp-content/uploads/2019/07/IMG-20190626-WA0017-1.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/robobo.org/wp-content/uploads/2019/07/IMG-20190626-WA0017-1.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/robobo.org/wp-content/uploads/2019/07/IMG-20190626-WA0017-1.jpg?w=1280&amp;ssl=1 1280w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1" /></figure>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">865</post-id>	</item>
+		<item>
+		<title>Treinamento na Província da Zambézia</title>
+		<link>/treinamento-na-provincia-da-zambezia/</link>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Wed, 03 Jul 2019 10:41:28 +0000</pubDate>
+				<category><![CDATA[Actividades]]></category>
+		<category><![CDATA[Produtos]]></category>
+		<category><![CDATA[Serviços]]></category>
+		<guid isPermaLink="false">/?p=860</guid>
+
+					<description><![CDATA[O programa de monitorização PEC é um programa -piloto em 4 distritos da província da Zambézia, em Moçambique, onde os parceiros PEC, trabalham com as comunidades locais para redução livre defecação a céu aberto (LIDECA). Este projecto utilizará 3 ferramentas diferentes de colecta de dados: um formulário de linha de base, um formulário de desencadeante&#8230;&#160;<a href="/treinamento-na-provincia-da-zambezia/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Treinamento na Província da Zambézia</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p> O programa de monitorização PEC é um programa -piloto em 4 distritos da província da Zambézia, em Moçambique, onde os parceiros PEC, trabalham com as comunidades locais para redução livre defecação a céu aberto (LIDECA). Este projecto utilizará 3 ferramentas diferentes de colecta de dados: um formulário de linha de base, um formulário de desencadeante e um formulário de monitoramento. Os formulários serão preenchidos e enviados usando o ODK Collect, um aplicativo de colecta de dados do Android. </p>
+
+
+
+<p> A Robobo ministrou a formação em Zambézia durante três (3) dias, durante os dias  19, 20 e 21 de Junho de 2019, localizado na província de Gurué &#8211; Zambézia.</p>
+
+
+
+<p> Duas sessões de treinamento separadas foram fornecidas:</p>
+
+
+
+<ul><li>Primeiros dois dias para inquiridores (colectores de dados)</li><li>Último dia para coordenadores.</li></ul>
+
+
+
+<figure class="wp-block-image"><img src="https://i0.wp.com/robobo.org/wp-content/uploads/2019/07/IMG-20190626-WA0008.jpg?resize=1024%2C768&#038;ssl=1" alt="This image has an empty alt attribute; its file name is IMG-20190626-WA0008-1024x768.jpg" data-recalc-dims="1"/></figure>
+
+
+
+<p>Os dois primeiros dias de treinamento foram focados em instrumentos de colecta de dados para todos os grupos de participantes e o último dia foi específico para a plataforma ONA e acesso de recursos do painel.</p>
+
+
+
+<p>Durante cada sessão, um total de 39
+participantes estavam presentes. Os participantes incluíram:</p>
+
+
+
+<ul><li>Empresas e animadores do PEC</li><li>Funcionários do governo do DPOPH</li><li>SDPI&#8217;s</li></ul>
+
+
+
+<p>Os participantes presentes durante a primeira sessão de dois dias, incluía coordenadores e inquiridores. Recomendou-se que os coordenadores estivessem presentes os três  dias do treinamento, pois fornecíamos os principais conhecimentos sobre os processos de colecta de dados e gestão e grande parte dos coordenadores participaram.</p>
+
+
+
+<p><strong>Pré-requisitos para a capacitação da Zambézia</strong></p>
+
+
+
+<p> Os participantes das sessões de treinamento foram solicitados a ter os seguintes recurso, antes do treinamento: </p>
+
+
+
+<ul><li>Telemóvel ou tablet com Android, </li><li>Configuração ou instalação do ODK Collect (opcional). </li></ul>
+
+
+
+<p>
+
+Para o treinamento dos coordenadores, havia um requisito adicional, laptop ou computador para permitir que cada participante acompanhasse todos os fluxos de trabalho.
+
+</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">860</post-id>	</item>
+		<item>
+		<title>Missão e Valores da Robobo</title>
+		<link>/missao-e-valores-da-robobo/</link>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Fri, 28 Jun 2019 10:56:18 +0000</pubDate>
+				<category><![CDATA[sobre nós]]></category>
+		<guid isPermaLink="false">/?p=853</guid>
+
+					<description><![CDATA[Missão Criar soluções que tenham impacto positivo na próxima geração em todos os lugares. Apoiamos e fornecemos guias para promover o desenvolvimento de soluções que sejam acessíveis e atendam às necessidades. Esforçamos-nos para tornar nossa tecnologia adequada para todos, Open Source e Modular. Valores Valorizamos a Inovação, o Código Aberto e a Criatividade.]]></description>
+										<content:encoded><![CDATA[
+<p>Missão<br> Criar soluções que tenham impacto positivo na próxima geração em todos os lugares. </p>
+
+
+
+<p>Apoiamos e fornecemos guias para promover o desenvolvimento de soluções que sejam acessíveis e atendam às necessidades. </p>
+
+
+
+<p>Esforçamos-nos para tornar nossa tecnologia adequada para todos, Open Source e Modular.</p>
+
+
+
+<p> Valores<br> Valorizamos a Inovação, o Código Aberto e a Criatividade.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">853</post-id>	</item>
+		<item>
+		<title>Destaques da Robobo Incorporated</title>
+		<link>/destaques-da-robobo-incorporeted/</link>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Thu, 27 Jun 2019 09:14:34 +0000</pubDate>
+				<category><![CDATA[sobre nós]]></category>
+		<guid isPermaLink="false">/?p=817</guid>
+
+					<description><![CDATA[Em Agosto 2017, a empresa APAUMA (uma empresa irmã) venceu uma competição FinTech com a solução de serviços de pagamento, onde um financiamento de 5000 GBP permitiu a criação de uma nova empresa, denominada Robobo Inc. que conduziu o desenvolvimento e implementação da proposta da solução. Durante o desenvolvimento e tentativa de implementar a solução&#8230;&#160;<a href="/destaques-da-robobo-incorporeted/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Destaques da Robobo Incorporated</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>
+
+Em Agosto 2017, a empresa APAUMA (uma empresa irmã) venceu uma competição FinTech com a solução de serviços de pagamento, onde um financiamento de 5000 GBP permitiu a criação de uma nova empresa, denominada Robobo Inc. que conduziu o desenvolvimento e implementação da proposta da solução. Durante o desenvolvimento e tentativa de implementar a solução entre Setembro de 2017 e Abril de 2018, a empresa encontrou barreiras jurídicas que não permitiam transacções peer-to-peer e roll-out de mercado. A empresa, por meio de orientação jurídica para superar os obstáculos, constatou que o funcionamento como um negócio de revenda intermediário permitiria que ele actua-se na primeira fase das actividades B2C. Como tal, a 14 de maio de 2018, uma implantação gradual de serviços e soluções que utilizam a tecnologia construída alcançará um mercado piloto com uma agência de notícias local sendo a primeira base de clientes.
+
+</p>
+
+
+
+<p> Em maio de 2018, tivemos uma abertura para a sandbox regulamentar, aceitar essa proposta significa que a empresa poderá lançar e testar transacções peer-to-peer que estejam de acordo com o quadro jurídico e com orientação e apoio do banco central. Este será um grande avanço, pois permitirá que o serviço atinja o grupo-alvo do mercado, alcançando assim o objectivo global da inclusão financeira.</p>
+
+
+
+<p> Dentro de duas semanas iremos iniciar os testes do pagamento PAGALU com outros prestadores de serviços de pagamentos.   </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">817</post-id>	</item>
+		<item>
+		<title>Estrutura societária da Robobo Incorporated Lda</title>
+		<link>/estrutura-societaria-da-robobo-incorporatd-lda/</link>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Thu, 27 Jun 2019 09:11:46 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=814</guid>
+
+					<description><![CDATA[O PagaLu actualmente opera no âmbito do negócio legalmente registado Robobo Incorporated Lda, com o número da empresa (NUIT) 400 815 062. Robobo é uma empresa familiar de propriedade exclusiva dedicada ao software de Desenvolvimento e engenharia. Espera-se que PagaLu seja ramificada para fora em uma entidade de negócio separada, registada como uma companhia de&#8230;&#160;<a href="/estrutura-societaria-da-robobo-incorporatd-lda/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Estrutura societária da Robobo Incorporated Lda</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p> O PagaLu actualmente opera no âmbito do negócio legalmente registado Robobo Incorporated Lda, com o número da empresa (NUIT) 400 815 062. Robobo é uma empresa familiar de propriedade exclusiva dedicada ao software de Desenvolvimento e engenharia. Espera-se que PagaLu seja ramificada para fora em uma entidade de negócio separada, registada como uma companhia de responsabilidade limitada.</p>
+
+
+
+<p> Robobo é controlado por dois accionistas: Fei Manheche e Ana Santos Manheche, que são o Director da empresa e Directora executiva, respectivamente. </p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">814</post-id>	</item>
+		<item>
+		<title>Cliente: ONA-Unicef</title>
+		<link>/cliente-ona-unicef/</link>
+		
+		<dc:creator><![CDATA[Fei Manheche]]></dc:creator>
+		<pubDate>Thu, 27 Jun 2019 09:09:34 +0000</pubDate>
+				<category><![CDATA[Cientes]]></category>
+		<guid isPermaLink="false">/?p=812</guid>
+
+					<description><![CDATA[Coleta de dados ONA e suporte em treinamento para Unicef. Ona simplifica a Colecta de dados e a colaboração do projecto, ajudando a aumentar a qualidade dos dados conectados e permitindo que os gerentes de projecto visualizem dados em tempo real. Pesquisas de papel anteriores foram digitalizadas. Agora, os formulários são carregados para a plataforma&#8230;&#160;<a href="/cliente-ona-unicef/" class="" rel="bookmark">Read More &#187;<span class="screen-reader-text">Cliente: ONA-Unicef</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p> Coleta de dados ONA e suporte em treinamento para Unicef. </p>
+
+
+
+<p> Ona simplifica a Colecta de dados e a colaboração do projecto, ajudando a aumentar a qualidade dos dados conectados e permitindo que os gerentes de projecto visualizem dados em tempo real. Pesquisas de papel anteriores foram digitalizadas. Agora, os formulários são carregados para a plataforma ona, e todos os dados colectados são armazenados lá também. O guia fornecerá links para a documentação para ajudar a familiarizá-lo com os principais recursos da plataforma Ona. </p>
+
+
+
+<figure class="wp-block-image"><img src="https://i0.wp.com/www.pagalu.co/wp-content/uploads/2019/06/image-22.png?w=1200&#038;ssl=1" alt="This image has an empty alt attribute; its file name is image-22.png" data-recalc-dims="1"/></figure>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">812</post-id>	</item>
+	</channel>
+</rss>
